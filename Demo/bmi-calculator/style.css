@@ -1,0 +1,193 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "PingFang SC", "PingFang HK", sans-serif;
+    background-color: rgb(233, 233, 233);
+    margin: 0px;
+}
+
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  input[type="button"] {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    border: none;
+    outline: none;
+  }
+
+/* Color definition */
+:root {
+    --normal:#86D73E;
+    --underweight: #31BAF9 ;
+    --overweight: #FF982D ;
+    --obesseI: #FF6C02;
+    --obesseII: #FF6C02;
+    --obesseIII: #FF1200;
+  }
+
+
+/* Custom css */
+
+.top-section {
+    background-color: #424242 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.input-area {
+    display: block;
+    margin-left: 97px;
+    margin-right: 53px;
+}
+
+.input-item {
+    width: 250px;
+    padding-bottom: 23px;
+}
+
+.input-item label {
+    color: #FFD366;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.input-item input {
+    width: 100%;
+    height:40px ;
+    font-size: 24px;
+    background-color: rgba(255,255,255,0.18) ;
+    border: #FFD366 solid 2px;
+    color: white;
+    border-radius: 10px;
+    padding: 0 8px;
+}
+
+.check-result {
+    background-color: #FFD366;
+    font-size: 24px;
+    color: #424242;
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    transition-duration: 200ms;
+}
+
+.check-result:hover {
+    background-color:#FFD366;
+    box-shadow: 0 1px 6px 3px rgba(255,195,49,0.64);
+}
+
+.check-result:active {
+    background-color: #DEA921;;
+}
+
+
+.show-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--normal);
+    display: none;
+}
+
+.result-circle {
+    border-radius: 100%;
+    border: solid 6px;
+    width: 123px;
+    height: 123px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bmi-number {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.unit {
+    font-size: 14px;
+}
+
+.result-level {
+    font-size: 32px;
+    padding-left: 18px;
+}
+
+.reset-btn {
+    position: absolute;
+    padding: 5px 8px;
+    background-color: var(--normal);
+    border-radius: 100%;
+    bottom:6px;
+    right: -3px;
+    border: 3px solid #424242;
+}
+
+
+.result-history {
+    padding: 48px 20px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+
+}
+
+.list-title {
+    font-size: 24px;
+    color: #424242;
+    padding-bottom: 36px;
+}
+
+.list-section {
+    width: 624px;
+}
+
+.history-item {
+    background-color: white;
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.content-group {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.list-content-m {
+    font-size: 20px;
+    color: #424242;
+}
+
+.list-content-s {
+    font-size: 12px;
+    color: #424242;
+}
+
+
+.footer {
+    background-color: #FFD366;
+    height: 90px;
+    width: 100%;
+}

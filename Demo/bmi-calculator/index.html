@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <div class="top-section">
+        <img src="img/BMICLogo.png" alt="logo">
+        <div class="content">
+            <div class="input-area">
+                <div class="input-item">
+                    <label for="身高">身高 cm</label>
+                    <input class="inputHeight" type="number" placeholder="請輸入身高">
+                </div>
+                <div class="input-item">
+                    <label for="體重">體重 kg</label>
+                    <input class="inputWeight" type="number" placeholder="請輸入體重">
+                </div>
+            </div>
+            <input  class="check-result" type="button" value="看結果">
+
+            <!-- BMI result -->
+            <div class="show-result">
+                <div class="result-circle">
+                    <div class="bmi-number"></div>
+                    <div class="unit">BMI</div>
+                    <img class="reset-btn" src="img/icons_loop.png" alt="reset">
+                </div>
+                <div class="result-level"></div>   
+            </div>
+            
+        </div>
+    </div>
+    <div class="result-history">
+        <div class="list-title">BMI紀錄</div>
+        <div class="list-section">
+
+            <!-- BMI紀錄 -->
+            <!-- <div class="history-item">
+                <div class="list-content-m">理想</div>
+                <div class="content-group">
+                    <div class="list-content-s">BMI</div>
+                    <div class="list-content-m">20.9</div>
+                </div>
+                <div class="content-group">
+                    <div class="list-content-s">weight</div>
+                    <div class="list-content-m">70kg</div>
+                </div>
+                <div class="content-group">
+                    <div class="list-content-s">height</div>
+                    <div class="list-content-m">180cm</div>
+                </div>
+                <div class="content-group">
+                    <div class="list-content-s">06-19-2017</div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="footer"></div>
+</body>
+<script src="all.js"></script>
+</html>
