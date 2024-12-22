@@ -2,7 +2,8 @@ var list = document.querySelector('.list-section');
 var send = document.querySelector('.check-result');
 var bmiResult = document.querySelector('.show-result');
 var resetBtn = document.querySelector('.reset-btn');
-var data = JSON.parse(localStorage.getItem('bmiData')) || [];
+var data = JSON.parse(localStorage.getItem('listData')) || [];
+updateList(data);
 
 
 //監聽與更新
