@@ -169,6 +169,28 @@ h1 {
     font-size: 16px;
 }
 
+
+.pagination {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px 0px;
+}
+.pagination button {
+    padding: 5px 10px;
+    color: #4A4A4A ;
+    font-size: 14px;
+    cursor: pointer;
+    border: 0px;
+    background-color: transparent;
+}
+
+.pagination button:hover {
+    color: #559AC8;
+}
+
 .footer {
     background-color: #559AC8 ;
     height: 90px;

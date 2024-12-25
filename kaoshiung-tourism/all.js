@@ -16,7 +16,7 @@ var data = [
         Parkinginfo_px: "0",
         Name: "中都愛河濕地公園",
         Level: null,
-        Picture1: "https://raw.githubusercontent.com/hexschool/KCGTravel/master/image/%E4%B8%89%E6%B0%91%E5%8D%80/%E4%B8%AD%E9%83%BD%E6%B0%95%E5%9C%B0%E5%85%AC%E5%9C%9207.jpg",
+        Picture1: "https://raw.githubusercontent.com/hexschool/KCGTravel/master/image/%E4%B8%89%E6%B0%91%E5%8D%80/%E4%B8%AD%E9%83%BD%E6%BF%95%E5%9C%B0%E5%85%AC%E5%9C%9207.jpg",
     },
     {
     Ticketinfo: "免費參觀",
@@ -107,14 +107,14 @@ var data = [
     Class1: "1",
     Website: "",
     Opentime: "週二至週日10:00-17:00部份區域開放，每週一休館",
-    Description: "中都唐榮磚窯廠曾以生產高級耐火磚聞名，前身為創建於1899年的鮫島煉瓦工場。1985年，不敵時代與環保等因素要拆除的舊廠房，由於保留了二座高聳的煙囪、八卦窯、三座倒焰窯、實驗窯、隧道窯、日治時期磚造事務所等設備，無異是一座活生生的磚窯歷史博物館，不但見證了百年來工業經濟發展的軌跡，紅磚建築的結構、質地、磚飾也提供建築美學上的價值與範例，因此在2003年後陸續列為市定及國定古蹟，也是高雄第一座古蹟文化園區。走在佔地2.27公頃的廣大園區，愛河的潾潾波光映照著磚窯廠的紅磚綠樹，漫步於台灣保存最完整的瓦窯廠體驗歲月悠悠與時代興衰，實為身心靈一大享受。",
+    Description: "中都唐榮磚窯廠曾以生產高級耐火磚聞名，前身為創建於1899年的鮫島煉瓦工場。1985年，不敵時代與環保等因素要拆除的舊廠房，由於保留了二座高聳的煙囪、八卦窯、三��倒焰窯、實驗窯、隧道窯、日治時期磚造事務所等設備，無異是一座活生生的磚窯歷史博物館，不但見證了百年來工業經濟發展的軌跡，紅磚建築的結構、質地、磚飾也提供建築美學上的價值與範例，因此在2003年後陸續列為市定及國定古蹟，也是高雄第一座古蹟文化園區。走在佔地2.27公頃的廣大園區，愛河的潾潾波光映照著磚窯廠的紅磚綠樹，漫步於台灣保存最完整的瓦窯廠體驗歲月悠悠與時代興衰，實為身心靈一大享受。",
     Remarks: "",
     Parkinginfo_py: "0",
     Parkinginfo_px: "0",
     Name: "中都唐榮磚窯廠",
     Level: null,
     Picture1: "https://raw.githubusercontent.com/hexschool/KCGTravel/master/image/%E4%B8%89%E6%B0%91%E5%8D%80/%E4%B8%AD%E9%83%BD%E5%94%90%E6%A6%AE%E7%A3%9A%E7%AA%AF%E5%BB%A001.jpg",
-    Toldescribe: "中都唐榮磚窯廠曾以生產高級耐火磚聞名，前身為創建於1899年的鮫島煉瓦工場。1985年，不敵時代與環保等因素要拆除的舊廠房，由於保留了二座高聳的煙囪、八卦窯、三座倒焰窯、實驗窯、隧道窯、日治時期磚造事務所等設備，無異是一座活生生的磚窯歷史博物館，不但見證了百年來工業經濟發展的軌跡，紅磚建築的結構、質地、磚飾也提供建築美學上的價值與範例，因此在2003年後陸續列為市定及國定古蹟，也是高雄第一座古蹟文化園區。走在佔地2.27公頃的廣大園區，愛河的潾潾波光映照著磚窯廠的紅磚綠樹，漫步於台灣保存最完整的瓦窯廠體驗歲月悠悠與時代興衰，實為身心靈一大享受。",
+    Toldescribe: "中都唐榮磚窯廠曾以生產高級耐火磚聞名，前身為創建於1899年的鮫島煉瓦工場。1985年，不敵時代與環保等因素要拆除的舊廠房，由於保留了二座高聳的煙囪、八卦窯、三座倒焰窯、實驗窯、隧道窯、日治時期磚造事務所等設備，無異是一座活生生的磚窯歷史博物館，不但見證了百年來工業經濟發展的軌跡，紅磚建築的結構、質地、磚飾也提供建築美���上的價值與範例，因此在2003年後陸續列為市定及國定古蹟，也是高雄第一座古蹟文化園區。走在佔地2.27公頃的廣大園區，愛河的潾潾波光映照著磚窯廠的紅磚綠樹，漫步於台灣保存最完整的瓦窯廠體驗歲月悠悠與時代興衰，實為身心靈一大享受。",
     Changetime: "2015-06-03T09:57:39",
     Tel: "886-7-7995678",
     Picdescribe1: "中都唐榮磚窯廠",
@@ -133,7 +133,7 @@ var data = [
     Class1: "1",
     Website: "",
     Opentime: "週二至週日09:00-17:00，每週一休館",
-    Description: "位於三民一、二號公園的「新客家文化園區」緊鄰近愛河畔愛河之心、光之塔、客家文物館等景點，為全台灣首座都會型客家文化園區。園區設置1.05公里的花香步道、紅磚瓦屋、半月池、圓型的客家土樓建築、菸葉造型屋頂的演藝廳…處處可見客家風情與意象巧思。文物館內有常設的客家文物展示廳、兒童體驗廳、DIY教室及視廳圖館，展演廳則有常態性的客家藝文表演，提供了認識客家文化的最佳平台與文化交流。圓樓餐廳的客家農特產品及特色餐飲也使遊客能盡情享受美食及購物樂趣。開闊廣大的園區與多元的活動，是體驗傳統客家文化與半日遊的?佳樂活景點。",
+    Description: "位於三民一、二號公園的「新客家文化園區」緊鄰近愛河畔愛河之心、光之塔、客家文物館等景點，為全台灣首座都會型客家文化園區。園區設置1.05公里的花香步道、紅磚瓦屋、半月池、圓型的客家土樓建築、菸葉造型屋頂的演藝廳…處處可見客家風情與意象巧思。文物館內有常設的客家文物展示廳、兒童體驗廳、DIY教室及視廳圖館，展演廳則有常態性的客家藝文表演，提供了認識客��文化的最佳平台與文化交流。圓樓餐廳的客家農特產品及特色餐飲也使遊客能盡情享受美食及購物樂趣。開闊廣大的園區與多元的活動，是體驗傳統客家文化與半日遊的?佳樂活景點。",
     Remarks: "",
     Parkinginfo_py: "0",
     Parkinginfo_px: "0",
@@ -166,7 +166,7 @@ var data = [
     Name: "國定古蹟-竹仔門電廠",
     Level: null,
     Picture1: "https://raw.githubusercontent.com/hexschool/KCGTravel/master/image/%E7%BE%8E%E6%BF%83%E5%8D%80/%E7%AB%B9%E5%AD%90%E9%96%80%E7%99%BC%E9%9B%BB%E5%BB%A0.jpg",
-    Toldescribe: "竹仔門發電廠目前正式名稱為「高屏發電廠竹仔門分廠」，是日據時代為提供南台灣電力而興建，利用荖濃溪水力發電的川流式電廠。建於1908年的竹仔門電廠花木扶疏、綠樹蓊鬱，仿巴洛克式的三層磚造樓房去除了繁複的花飾、留下簡捷優雅的線條，弧形山牆、成列的拱形窗戶、牛眼窗，使電廠少了冰冷的工業風格而多了古典溫潤，在美濃紅磚瓦厝的四合院落中更顯得獨具特色。電廠內的發電設備當年均由德國進口，經過百年時光仍能運轉，猶如活古董般的發電機見證了百年來台灣的發電史，也因此竹仔門電廠列為台灣第一座「產業古蹟」，2003年更成為國定古蹟。竹仔門電廠的電力曾為南台灣現代化奠定基礎，發電後的排水也為高屏農業灌溉出富裕繁盛，可在電廠上班日安排參觀，欣賞百年電廠環境及建築之美並實地了解水力發電，深具教育與觀光意義。",
+    Toldescribe: "竹仔門發電廠目前正式名稱為「高屏發電廠竹仔門分廠」，是日據時代為提供南台灣電力而興建，利用荖濃溪水力發電的川流式電廠。建於1908年的竹仔門電廠花木扶疏、綠樹蓊鬱，仿巴洛克式的三層磚造樓房去除了繁複的花飾、留下簡捷優雅的線條，弧形山牆、成列的拱形窗戶、牛眼窗，使電廠少了冰冷的工業風格而多了古典溫潤，在美濃紅磚瓦厝的四合院落中更顯得獨具特色。電廠內的發電設備當年均由德國進口，經過百年時光仍能運轉，猶如活古董般的發電機見證了百年來台灣的發電史，也因此竹仔門電廠列為台灣第一座「產業古蹟」，2003年更成為國定古蹟。竹仔門電廠的電力曾為南台灣現代化奠定基礎，發電後的排水也為高屏農業灌溉出富裕繁盛，可在電廠上班日安排���觀，欣賞百年電廠環境及建築之美並實地了解水力發電，深具教育與觀光意義。",
     Changetime: "2015-06-08T19:16:19",
     Tel: "886-7-6850579",
     Picdescribe1: "國定古蹟-竹仔門電廠",
@@ -185,7 +185,7 @@ var data = [
     Class1: "5",
     Website: "http://fgsarts.webgo.com.tw/",
     Opentime: "每日08:30-18:00",
-    Description: "佛光緣美術館緣於一九九四年為籌措佛光大學設校所需經費而做的義賣，這個因緣是來自於佛光大學，因此以「佛光緣」為名。美術館成立的目的是為了讓信徒遊客藉由認識佛教文物，進而瞭解佛教的具體內涵，欣賞佛教藝術之美，至今已在全國及世界各地設立23所分館，而總館位於高雄市大樹區佛光山大雄寶殿後方，面積有六百餘坪。館內除常設展「雲水三千」為創辦人星雲法師弘法五十餘年以來的影像，另有典藏及常態展示區及美術教室，將佛教與藝文結合，為民眾提供一個心靈開放的空間，參與互動的文化藝術天地，提昇大眾生活品質、內涵。",
+    Description: "佛光緣美術館緣於一九九四年為籌措佛光大學設校所需經費而做的義賣，這個因緣是來自於佛光大學，因此以「佛光緣」為名。美術館成立的目的是為了讓信徒遊客藉由認識佛教文物，進而瞭解佛教的具體內涵，欣賞佛教藝術之美，至今已在全國及世界各地設立23所分館，而總館位於高雄市大樹區佛光山大雄寶殿後方，面積有六百餘坪。館內除常設展「雲水三千」為創辦人星雲法師弘法五十餘年以來的影像，另有典藏及常態展示區及美術教室，將佛教與藝文結合，為民眾提供一個心靈開放的空間，參與互動的文化藝術天地，提昇大眾生活品��、內涵。",
     Remarks: "",
     Parkinginfo_py: "0",
     Parkinginfo_px: "0",
@@ -1475,9 +1475,12 @@ var data = [
     Id: "C1_397000000A_000190"
     }
 ]
+var filteredData = data; // 存儲過濾後的資料
 var list = document.querySelector('.content-list')
 var selectElement = document.getElementById('district-select');
 var tagElement = document.querySelectorAll('.tag');
+var itemsPerPage = 10;
+var currentPage = 1 ;
 
 //監聽事件
 selectElement.addEventListener('change', filterDistrict);
@@ -1486,8 +1489,16 @@ tagElement.forEach(tag => {
 }); //為每個 tag 綁定點擊事件
 
 // 列出所有資料
-function displayData(data){
-    var html = data.map(item => {
+function displayData(dataToDisplay){
+    // 計算總頁數
+    var totalPages = Math.ceil (dataToDisplay.length / itemsPerPage);
+    var startIndex = (currentPage-1 )* itemsPerPage;
+    var endIndex = startIndex + itemsPerPage;
+
+     // 確保不超出範圍
+     var paginatedData = dataToDisplay.slice(startIndex, endIndex);
+
+    var html = paginatedData.map(item => {
         return `
             <div class="content-card">
                     <div class="top" style="background-image: url('${item.Picture1}');">
@@ -1527,8 +1538,34 @@ function displayData(data){
     }).join('');
     
     list.innerHTML = html ;
+
+    // 顯示分頁按鈕
+    displayPagination(totalPages);
 };
-displayData(data);
+
+
+//分頁功能
+function displayPagination(totalPages) {
+    var paginationContainer = document.getElementById('pagination');
+    paginationContainer.innerHTML = ''; // 清空現有的分頁按鈕
+
+    for (let i = 1; i <= totalPages; i++) {
+        var button = document.createElement('button');
+        button.innerText = i;
+
+        // 檢查當前頁碼，並為當前頁碼的按鈕添加粗體樣式
+        if (i === currentPage) {
+            button.style.fontWeight = 'bold'; // 設置當前頁碼的按鈕為粗體
+            button.style.color = '#559AC8';
+        }
+
+        button.onclick = () => {
+            currentPage = i; // 更新當前頁碼
+            displayData(filteredData); // 重新顯示資料
+        };
+        paginationContainer.appendChild(button);
+    }
+}
 
 
 //District list 列出有出現的區
@@ -1558,18 +1595,25 @@ function filterDistrict(e) {
 
     if (selectValue == 'default') {
         // 當選到預設選項時，應該要做的事
-        displayData(data); 
+        filteredData = data;
+        currentPage = 1;
+        displayData(filteredData); 
         districtTitle.textContent = "全部區域";
         return;  
-    }
+    };
 
     //filter data
-    var filteredData = data.filter(item=> item.Zone === selectValue || item.Zone === tagValue);
+    filteredData = data.filter(item=> item.Zone === selectValue || item.Zone === tagValue);
     
-    // //印出選取後對應的區域景點
+    //計算過濾後的總頁數
+    var totalFilteredPages = Math.ceil(filteredData.length/itemsPerPage);
+    currentPage = 1;
     displayData(filteredData);
+    displayPagination(totalFilteredPages); //顯示扉頁數量
   
     //替換區域標題
     districtTitle.textContent = selectValue || tagValue;    
 };
+
+displayData(data);
 
