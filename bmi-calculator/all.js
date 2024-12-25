@@ -8,7 +8,6 @@ updateList(data);
 
 //監聽與更新
 send.addEventListener('click', addData);
-send.addEventListener('click', showResult);
 resetBtn.addEventListener('click', resetResult);
 
 
@@ -49,23 +48,40 @@ function getBorderColor(level) {
     return borderColors[level] || 'var(--normal)';
 }
 
+//檢查input是否為空值 
+function checkEmptyInputs(height, weight){
+    if (height === "" || weight === "") {
+        alert('請輸入身高和體重');
+        return true ; // 返回 true 表示有空值 
+    } else {
+        return false; // 返回 false 表示沒有空值
+    }
+}
+
 
 //新增事件到local storage
 function addData(e){
     e.preventDefault();
     var height = document.querySelector('.inputHeight').value;
     var weight = document.querySelector('.inputWeight').value;
+    var bmiValue = calculateBMI(height,weight);
+
+    // 检查输入是否为空
+    if (checkEmptyInputs(height, weight)) {
+        return; // 如果有空值，直接返回，不执行后续代码
+    }
+    
     var currentTime = new Date().toLocaleString('zh-TW', {
-       year: 'numeric',
-       month: '2-digit',
-       day: '2-digit',
-       hour: '2-digit',
-       minute: '2-digit',
-       hour12: false // 24小時制
-   });
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false // 24小時制
+    });
+ 
     
     //BMI陣列
-    var bmiValue = calculateBMI(height,weight);
     var bmiData = {
         height: height,
         weight: weight,
@@ -78,18 +94,24 @@ function addData(e){
     updateList(data);
     localStorage.setItem('listData', JSON.stringify(data));
 
-    //顯示點擊的bmi結果
-    document.querySelector('.bmi-number').textContent =  bmiValue ;
-    document.querySelector('.result-level').textContent = classfyBmiLevel(bmiValue);
-    document.querySelector('.show-result').style.color = getBorderColor(bmiData.level);
-    document.querySelector('.reset-btn').style.backgroundColor = getBorderColor(bmiData.level);
+    // 顯示結果
+    showResult(bmiData);
 
 }
 
 
 //顯示bmi結果
-function showResult(){
-    bmiResult.style.display = 'flex' ; 
+function showResult(bmiData) {
+    if (!bmiData) {
+        return; // 如果沒有數據，直接返回
+    }
+
+    document.querySelector('.bmi-number').textContent = bmiData.bmi;
+    document.querySelector('.result-level').textContent = bmiData.level;
+    document.querySelector('.show-result').style.color = getBorderColor(bmiData.level);
+    document.querySelector('.reset-btn').style.backgroundColor = getBorderColor(bmiData.level);
+
+    bmiResult.style.display = 'flex';
     send.style.display = 'none';
 }
 
