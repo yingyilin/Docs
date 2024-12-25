@@ -1485,47 +1485,51 @@ tagElement.forEach(tag => {
     tag.addEventListener ('click', filterDistrict)
 }); //為每個 tag 綁定點擊事件
 
-// map 列出所有資料
-var html = data.map(item => {
-    return `
-        <div class="content-card">
-                <div class="top" style="background-image: url('${item.Picture1}');">
-                    <div class="content">
-                        <div class="title">${item.Name}</div>
-                        <div class="district">${item.Zone}</div>
-                    </div>
-                </div>
-                <div class="bottom">
-                    <div class="info-group">
-                        <div class="icon">
-                            <img src="img/icons_clock.png" alt="">
+// 列出所有資料
+function displayData(data){
+    var html = data.map(item => {
+        return `
+            <div class="content-card">
+                    <div class="top" style="background-image: url('${item.Picture1}');">
+                        <div class="content">
+                            <div class="title">${item.Name}</div>
+                            <div class="district">${item.Zone}</div>
                         </div>
-                        <div class="info-text">${item.Opentime}</div>
                     </div>
-                    <div class="info-group">
-                        <div class="icon">
-                            <img src="img/icons_pin.png" alt="">
+                    <div class="bottom">
+                        <div class="info-group">
+                            <div class="icon">
+                                <img src="img/icons_clock.png" alt="">
+                            </div>
+                            <div class="info-text">${item.Opentime}</div>
                         </div>
-                        <div class="info-text">${item.Add}</div>
-                    </div>
-                    <div class="info-group">
-                        <div class="icon">
-                            <img src="img/icons_phone.png" alt="">
+                        <div class="info-group">
+                            <div class="icon">
+                                <img src="img/icons_pin.png" alt="">
+                            </div>
+                            <div class="info-text">${item.Add}</div>
                         </div>
-                        <div class="info-text">${item.Tel}</div>
-                    </div>
-                    <div class="info-group">
-                        <div class="icon">
-                            <img src="img/icons_tag.png" alt="">
+                        <div class="info-group">
+                            <div class="icon">
+                                <img src="img/icons_phone.png" alt="">
+                            </div>
+                            <div class="info-text">${item.Tel}</div>
                         </div>
-                        <div class="info-text">${item.Ticketinfo}</div>
+                        <div class="info-group">
+                            <div class="icon">
+                                <img src="img/icons_tag.png" alt="">
+                            </div>
+                            <div class="info-text">${item.Ticketinfo}</div>
+                        </div>
                     </div>
-                </div>
-        </div>
-        `
-}).join('');
+            </div>
+            `
+    }).join('');
+    
+    list.innerHTML = html ;
+};
+displayData(data);
 
-list.innerHTML = html ;
 
 //District list 列出有出現的區
 var districtList = [];
@@ -1535,6 +1539,7 @@ data.forEach (item => {
         districtList.push(district); // 如果 districtList 中不包含該區域，則添加
     };
 });
+
 //把出現過的區放到select option內
 districtList.forEach( district => {
     var option = document.createElement('option');
@@ -1543,61 +1548,28 @@ districtList.forEach( district => {
     selectElement.appendChild(option);
 });
 
+
 // 切換Select區域後地區換名
 function filterDistrict(e) {
     var selectValue = e.target.value;
     var tagValue = e.target.textContent;
-    console.log (tagValue);
+    var districtTitle = document.querySelector('.content-title');
     list.innerHTML = ""; //清空列表
+
+    if (selectValue == 'default') {
+        // 當選到預設選項時，應該要做的事
+        displayData(data); 
+        districtTitle.textContent = "全部區域";
+        return;  
+    }
 
     //filter data
     var filteredData = data.filter(item=> item.Zone === selectValue || item.Zone === tagValue);
     
-    //印出選取後對應的區域景點
-    var html = "";
-    filteredData.forEach (item => {
-        html += `
-        <div class="content-card">
-                <div class="top" style="background-image: url('${item.Picture1}');">
-                    <div class="content">
-                        <div class="title">${item.Name}</div>
-                        <div class="district">${item.Zone}</div>
-                    </div>
-                </div>
-                <div class="bottom">
-                    <div class="info-group">
-                        <div class="icon">
-                            <img src="img/icons_clock.png" alt="">
-                        </div>
-                        <div class="info-text">${item.Opentime}</div>
-                    </div>
-                    <div class="info-group">
-                        <div class="icon">
-                            <img src="img/icons_pin.png" alt="">
-                        </div>
-                        <div class="info-text">${item.Add}</div>
-                    </div>
-                    <div class="info-group">
-                        <div class="icon">
-                            <img src="img/icons_phone.png" alt="">
-                        </div>
-                        <div class="info-text">${item.Tel}</div>
-                    </div>
-                    <div class="info-group">
-                        <div class="icon">
-                            <img src="img/icons_tag.png" alt="">
-                        </div>
-                        <div class="info-text">${item.Ticketinfo}</div>
-                    </div>
-                </div>
-        </div>
-        `
-    })
-   
-    // 將生成的 HTML 設定到 list 中
-    list.innerHTML = html;
-
+    // //印出選取後對應的區域景點
+    displayData(filteredData);
+  
     //替換區域標題
-    var districtTitle = document.querySelector('.content-title');
     districtTitle.textContent = selectValue || tagValue;    
 };
+
