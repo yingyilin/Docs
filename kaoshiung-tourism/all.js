@@ -1475,7 +1475,7 @@ var data = [
     Id: "C1_397000000A_000190"
     }
 ]
-var filteredData = data; // 存儲過濾後的資料
+var filteredData = data; // 初始時，filteredData 是原始資料
 var list = document.querySelector('.content-list')
 var selectElement = document.getElementById('district-select');
 var tagElement = document.querySelectorAll('.tag');
@@ -1615,5 +1615,5 @@ function filterDistrict(e) {
     districtTitle.textContent = selectValue || tagValue;    
 };
 
-displayData(data);
+displayData(filteredData);
 
