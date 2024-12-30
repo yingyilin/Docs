@@ -14,3 +14,33 @@ body {
     border-radius: 5px;
     display: none;
   }
+
+  /* 媒體查詢：針對小於 600px 的屏幕 */
+  @media (max-width: 600px) {
+    body {
+        padding: 10px; /* 減少內邊距 */
+    }
+
+    .input-group {
+        margin-bottom: 10px; /* 減少間距 */
+    }
+
+    .result {
+        padding: 10px; /* 減少內邊距 */
+    }
+  }
+
+  /* 媒體查詢：針對小於 400px 的屏幕 */
+  @media (max-width: 400px) {
+    body {
+        font-size: 14px; /* 減小字體大小 */
+    }
+
+    .input-group input {
+        padding: 10px; /* 調整輸入框的內邊距 */
+    }
+
+    .result {
+        font-size: 14px; /* 減小結果區域的字體大小 */
+    }
+  }

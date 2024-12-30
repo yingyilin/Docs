@@ -14,7 +14,7 @@ function calculateFees(adminRate){
     var quantity = Number(inputQuantity.value);
     var shippingFee = Number(inputShippingFee.value) ;
     var maxPrice = Math.min(price, 15000); //最高金額15000
-    var showAdminRate = adminRate * 100;
+    var showAdminRate = Math.round(adminRate * 100);
     //計算公式
     var adminFee = Math.round(maxPrice * quantity * adminRate);
     var processingFee = Math.round(((maxPrice * quantity) + shippingFee) * 0.02);
