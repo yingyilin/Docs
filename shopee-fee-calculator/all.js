@@ -57,7 +57,6 @@ function calculateFees(adminRate) {
     document.getElementById('transactionFee').textContent = adminFee;
     document.getElementById('processingFee').textContent = processingFee;
     document.getElementById('totalFee').textContent = totalFee;
-    document.getElementById('showShippingFee').textContent = shippingFee;
     document.getElementById('showRate').textContent = showAdminRate + '%';
     document.getElementById('orderIncome').textContent = orderIncome;
 }

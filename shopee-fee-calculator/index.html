@@ -1,69 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="bumblebee">
 <head>
   <title>蝦皮手續費計算器</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body class="bg-gray-100">
-  <div class="content bg-white p-6 rounded-lg shadow">
+<body>
+  <div class="content bg-base-100 p-6 rounded-lg shadow-xl">
     <h1 class="text-2xl mb-4">蝦皮手續費計算器</h1>
-    <div class="input-group">
-      <label class="block mb-2">商品售價</label>
-      <input type="number" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg p-2.5 w-full" placeholder="輸入商品價格">
+    <div class="form-control w-full">
+      <label class="label">商品售價</label>
+      <input type="number" id="price" class="input input-bordered w-full" placeholder="輸入商品價格">
     </div>
 
-    <div class="input-group">
-      <label class="block mb-2">數量</label>
-      <input type="number" id="quantity" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg p-2.5 w-full" value="1" min="1">
+    <div class="form-control w-full">
+      <label class="label">數量</label>
+      <input type="number" id="quantity" class="input input-bordered w-full" value="1" min="1">
     </div>
 
-    <div class="input-group">
-        <label class="block mb-2">運費</label>
-        <select id="shippingFee" class="mb-2 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-          <option value="60" selected>超商取貨付款 (NT$60)</option>
-          <option value="45">蝦皮店到店 (NT$45)</option>
-          <option value="65">店到家宅配 (NT$65)</option>
-          <option value="customShippingFee">自訂運費</option>
-        </select>
-        <!-- 自訂運費 -->
-        <input type="number" id="customShippingFee" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg p-2.5 w-full" value="0" min="1">
-
+    <div class="form-control w-full">
+      <label class="label">運費</label>
+      <select id="shippingFee" class="select select-bordered w-full">
+        <option value="60" selected>超商取貨付款 (NT$60)</option>
+        <option value="45">蝦皮店到店 (NT$45)</option>
+        <option value="65">店到家宅配 (NT$65)</option>
+        <option value="customShippingFee">自訂運費</option>
+      </select>
+      <input type="number" id="customShippingFee" class="input input-bordered w-full mt-2"  min="1">
     </div>
 
-    <div class="input-group">
-        <label class="flex items-center">
-          <input type="checkbox" id="isShippingFree" class="mr-2">
-          我會負擔運費
-        </label>
-      </div>
-
-    <div class="input-group">
-      <label class="flex items-center">
-        <input type="checkbox" id="isPromotion" class="mr-2">
-        是否為促銷期間
+    <div class="form-control">
+      <label class="label cursor-pointer">
+        <span class="label-text">我會負擔運費</span>
+        <input type="checkbox" id="isShippingFree" class="checkbox">
       </label>
     </div>
 
-    <div class="input-group">
-      <label class="flex items-center">
-        <input type="checkbox" id="hasDiscount" class="mr-2">
-        是否參與免運補貼
+    <div class="form-control">
+      <label class="label cursor-pointer">
+        <span class="label-text">是否為促銷期間</span>
+        <input type="checkbox" id="isPromotion" class="checkbox">
       </label>
     </div>
 
-    <button id="calculateBtn" class="text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 w-full">計算費用</button>
+    <div class="form-control">
+      <label class="label cursor-pointer">
+        <span class="label-text">是否參與免運補貼</span>
+        <input type="checkbox" id="hasDiscount" class="checkbox">
+      </label>
+    </div>
 
-    <div id="result" class="result">
-      <p>成交手續費 (<span id = "showRate"></span>) ：NT$ <span id="transactionFee">0</span></p>
+    <button id="calculateBtn" class="btn btn-primary w-full mt-4">計算費用</button>
+
+    <div id="result" class="result mt-4">
+      <p>成交手續費 (<span id="showRate"></span>)：NT$ <span id="transactionFee">0</span></p>
       <p>金流處理費 (2%)：NT$ <span id="processingFee">0</span></p>
       <p class="font-bold">總手續費：NT$ <span id="totalFee">0</span></p>
       <div class="divider"></div>
-      <p>運費：NT$ <span id="showShippingFee">0</span></p>
       <p class="font-bold">訂單進帳：NT$ <span id="orderIncome">0</span></p>
     </div>
   </div>
-<script src="all.js"></script>
+  <script src="all.js"></script>
 </body>
 </html>
