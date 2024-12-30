@@ -1,9 +1,15 @@
 body {
     font-family: Arial, sans-serif;
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
+   
   }
+
+  .content {
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+
+  }
+
   .input-group {
     margin-bottom: 15px;
   }
