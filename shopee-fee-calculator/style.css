@@ -13,6 +13,11 @@ body {
   .input-group {
     margin-bottom: 15px;
   }
+
+#customShippingFee {
+  display: none;
+}
+
   .result {
     margin-top: 20px;
     padding: 15px;

@@ -21,13 +21,21 @@
 
     <div class="input-group">
         <label class="block mb-2">運費</label>
-        <input type="number" id="shippingFee" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg p-2.5 w-full" value="60" min="1">
+        <select id="shippingFee" class="mb-2 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+          <option value="60" selected>超商取貨付款 (NT$60)</option>
+          <option value="45">蝦皮店到店 (NT$45)</option>
+          <option value="65">店到家宅配 (NT$65)</option>
+          <option value="customShippingFee">自訂運費</option>
+        </select>
+        <!-- 自訂運費 -->
+        <input type="number" id="customShippingFee" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg p-2.5 w-full" value="0" min="1">
+
     </div>
 
     <div class="input-group">
         <label class="flex items-center">
           <input type="checkbox" id="isShippingFree" class="mr-2">
-          訂單是否含運
+          我會負擔運費
         </label>
       </div>
 
@@ -41,7 +49,7 @@
     <div class="input-group">
       <label class="flex items-center">
         <input type="checkbox" id="hasDiscount" class="mr-2">
-        是否參與免運補貼/蝦幣回饋
+        是否參與免運補貼
       </label>
     </div>
 
@@ -52,6 +60,7 @@
       <p>金流處理費 (2%)：NT$ <span id="processingFee">0</span></p>
       <p class="font-bold">總手續費：NT$ <span id="totalFee">0</span></p>
       <div class="divider"></div>
+      <p>運費：NT$ <span id="showShippingFee">0</span></p>
       <p class="font-bold">訂單進帳：NT$ <span id="orderIncome">0</span></p>
     </div>
   </div>
