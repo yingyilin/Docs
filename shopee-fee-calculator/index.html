@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>蝦皮手續費計算器</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+  <div class="bg-white p-6 rounded-lg shadow">
+    <h1 class="text-2xl mb-4">蝦皮手續費計算器</h1>
+    
+    <div class="input-group">
+      <label class="block mb-2">商品售價</label>
+      <input type="number" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg p-2.5 w-full" placeholder="輸入商品價格">
+    </div>
+
+    <div class="input-group">
+      <label class="block mb-2">數量</label>
+      <input type="number" id="quantity" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg p-2.5 w-full" value="1" min="1">
+    </div>
+
+    <div class="input-group">
+        <label class="block mb-2">運費</label>
+        <input type="number" id="shippingFee" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg p-2.5 w-full" value="60" min="1">
+    </div>
+
+    <div class="input-group">
+        <label class="flex items-center">
+          <input type="checkbox" id="isShippingFree" class="mr-2">
+          訂單是否含運
+        </label>
+      </div>
+
+    <div class="input-group">
+      <label class="flex items-center">
+        <input type="checkbox" id="isPromotion" class="mr-2">
+        是否為促銷期間
+      </label>
+    </div>
+
+    <div class="input-group">
+      <label class="flex items-center">
+        <input type="checkbox" id="hasDiscount" class="mr-2">
+        是否參與免運補貼/蝦幣回饋
+      </label>
+    </div>
+
+    <button id="calculateBtn" class="text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 w-full">計算費用</button>
+
+    <div id="result" class="result">
+      <p>成交手續費 (<span id = "showRate"></span>) ：NT$ <span id="transactionFee">0</span></p>
+      <p>金流處理費 (2%)：NT$ <span id="processingFee">0</span></p>
+      <p class="font-bold">總手續費：NT$ <span id="totalFee">0</span></p>
+      <div class="divider"></div>
+      <p class="font-bold">訂單進帳：NT$ <span id="orderIncome">0</span></p>
+    </div>
+  </div>
+<script src="all.js"></script>
+</body>
+</html>
