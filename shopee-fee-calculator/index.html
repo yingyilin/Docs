@@ -10,6 +10,20 @@
 <body>
   <div class="content bg-base-100 p-6 rounded-lg shadow-xl">
     <h1 class="text-2xl mb-4 font-semibold">蝦皮手續費計算器</h1>
+    <div role="alert" id="promotion-alert" class="alert alert-info ">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        class="h-6 w-6 shrink-0 stroke-current">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+      </svg>
+      <span id="promotion-alert-text"></span>
+    </div>
     <div class="form-control w-full">
       <label class="label">商品售價</label>
       <input type="number" id="price" class="input input-bordered w-full" placeholder="輸入商品價格">

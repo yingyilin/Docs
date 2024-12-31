@@ -3,11 +3,16 @@ body {
    
   }
 
+
   .content {
     max-width: 600px;
     width: 100%;
     margin: 20px auto;
 
+  }
+
+  #promotion-alert {
+    display: none;
   }
 
   .input-group {
